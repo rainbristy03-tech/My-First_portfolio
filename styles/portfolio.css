@@ -51,17 +51,19 @@
 }
 
 
+.text-center{
+        text-align: center;
+        
+}
+
 /* Main style */
 header{
-        background-color: #FFF8F3 ;
-        background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3 ;
-
-        background-position: left 20px top 0px, bottom right;
-        background-size: auto 95%, auto;
-
-        background-repeat: no-repeat;
-        padding-top: 50px;
-        min-height: 600px;
+       background-color: #FFF8F3;
+    background-image: url("../images/developer.png"), url("../images/header_bg.png");
+    background-position: left 20px top 50px, right bottom; 
+    background-repeat: no-repeat;
+    background-size: auto 90%, contain; 
+    min-height: 700px;
 }
 nav{
         width: 71%;
@@ -87,14 +89,16 @@ nav .menu a {
 
 #banner {
       /*  border: 1px solid red; */
-        margin: 47px 38px 0 230px;
+        margin: 47px 38px 0 150px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
+        
 }
 
 #banner .banner-content{
         max-width: 585px;
+        margin-bottom: 100px;
 }
 #banner .banner-content h2 {
         font-size: 45px;
@@ -116,9 +120,19 @@ nav .menu a {
         line-height: 30px;
         margin-bottom: 30px;
 }
+
+.banner-image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
 #banner .banner-image img {
-        max-width: 585px;
-        vertical-align: middle;
+    width: 600px;
+    height: auto; 
+    display: block;   
+    margin-bottom: -5px;
 }
 
 #about , #skills , #resume {
@@ -267,3 +281,54 @@ nav .menu a {
         line-height: 28px;
         color: #757575;
 }
+
+
+footer{
+        margin-top: 130px;
+        background-color: #FFF8F3;
+        padding: 130px 0px;
+}
+
+footer .footer-container{
+        width: 71%;
+        max-width: 1140px;
+        margin: 0px auto;
+        display: flex;
+        gap: 116px;
+}
+
+
+.footer-container h2{
+        color: #181818;
+        font-size: 35px;
+        margin-bottom: 20px;
+}
+
+
+.footer-container .social {
+        max-width: 562px;
+}
+
+
+.footer-container .social p{
+        color: #474747;
+        line-height: 28px;
+        font-size: 16px;
+        margin-bottom: 30px;
+}
+
+
+.footer-container .icons a{
+        margin-right: 24px;
+}
+
+.footer-container form input[type="text"] , .footer-container form textarea {
+        width: 461px;
+        padding: 18px 31px;
+        margin-bottom: 24px;
+        border: none;
+        border-radius: 5px;
+        color: #757575;
+}
+
+
